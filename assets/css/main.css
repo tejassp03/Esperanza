@@ -36,7 +36,7 @@
 .esp_logo
 {
     margin-top:5px;
-    font-weight: 700;
+    font-weight: 500;
     background: -webkit-linear-gradient(#FF00BF, #18222c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,7 +78,29 @@
 
 
 
-
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.3);
+  }
+  .hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-body
+  {
+      z-index: 1000;
+      text-align: center;
+  }
 
 .dsatm_logo:hover
 {
