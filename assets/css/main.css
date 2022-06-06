@@ -1,0 +1,26 @@
+.navbar-item
+{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.navbar-item:hover
+{
+    background-color: black !important;
+}
+.navbar-link
+{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-link:hover
+{
+    background-color: black !important;
+
+}
+.navbar
+{
+    padding: 10px;
+}
