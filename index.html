@@ -33,7 +33,7 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
           
-          <a class="navbar-item">
+          <a class="navbar-item" href="#events">
               Events
           </a>
           
@@ -81,7 +81,9 @@
   </section>
     </div>
     
-<div class="content is-medium" style="height: 100vh;">
+<div class="content is-medium p-5" style="height: 100vh;background-color: #f6d327;
+background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);margin-bottom: 0;backdrop-filter: blur( 4px );
+" id="events">
     <h1>Hello World</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
     <h2>Second level</h2>
@@ -93,5 +95,27 @@
       <li>Ut non enim metus.</li>
     </ul>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">🖕</button>
 </body>
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </html>
