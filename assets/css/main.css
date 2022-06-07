@@ -1,11 +1,15 @@
-
+body
+{
+    scroll-behavior: auto;
+    font-family: 'Josefin Sans', sans-serif;    
+}
 .navbar-item
 {
     color: white;
     font-size: 20px;
     font-weight: bold;
     margin-right: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    
 }
 .navbar-item:hover
 {
@@ -20,7 +24,7 @@
     color: white;
     font-size: 20px;
     font-weight: 100;
-    font-family: 'Josefin Sans', sans-serif;
+    
 }
 .navbar-link:hover
 {
@@ -29,6 +33,7 @@
 }
 .navbar
 {
+    
     padding: 10px;
     position: sticky;
     top: 0;
@@ -40,7 +45,7 @@
     background: -webkit-linear-gradient(#FF00BF, #18222c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Josefin Sans', sans-serif;
+  
 }
 .esp_2k22
 {
@@ -53,7 +58,7 @@
 }
 .home-content
 {
-    font-family: 'Josefin Sans', sans-serif;
+    
     color: white;
     font-weight: 500;
     justify-content: center;
@@ -71,6 +76,7 @@
 }
 .hero-body
 {
+   
     align-content: flex-start !important;
 }
 
@@ -100,6 +106,7 @@ video {
   {
       z-index: 1000;
       text-align: center;
+      
   }
 
 .dsatm_logo:hover
