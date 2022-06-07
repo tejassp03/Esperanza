@@ -19,7 +19,7 @@ body
 .navbar-item:hover
 {
     background-color: black !important;
-    -webkit-mask-image: linear-gradient(-75deg, rgba(146, 6, 125, 0.6) 30%, rgb(5, 31, 124) 50%, rgba(0, 0, 0, 0.6) 70%);
+    -webkit-mask-image: linear-gradient(-75deg, rgba(255, 83, 229, 0.6) 30%, rgb(5, 31, 124) 50%, rgba(0, 0, 0, 0.6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 1.5s normal;
     animation-iteration-count: infinite; 
@@ -38,7 +38,7 @@ body
 }
 .navbar
 {
-    
+    z-index: 10000;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -47,7 +47,7 @@ body
 {
     margin-top:5px;
     font-weight: 500;
-    background: -webkit-linear-gradient(#FF00BF, #18222c);
+    background: rgb(255, 0, 217);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
@@ -56,7 +56,7 @@ body
 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600 !important;
-    background: -webkit-linear-gradient(#d9ff00, #29412d);
+    background: -webkit-linear-gradient(#d9ff00, #869719);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -129,15 +129,15 @@ video {
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
+    border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(0, 0, 0); /* Set a background color */
+    background-color: rgb(255, 255, 255); /* Set a background color */
     color: rgb(255, 255, 255); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     border-radius: 50%;
     font-size: 20px;
     line-height: 48px;
-    width: 48px;
+    width: 54px;
     
   }
   #myBtn>h2
@@ -146,22 +146,78 @@ video {
    
    
   }
-  
+  .insta
+{
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-
-
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(135deg, #f53eff 0%,#7367F0 100%);
+    border-radius: 10px;
+  }
+  
 .glasscard
 {
+    
+    position:relative;
     background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
-    padding: 10px;
-    border-radius:20px;
+    padding: 20px;
+    border-radius:5px;
+    border: 10px solid white;
+    text-align: left !important;
+    width: 100%;
+    
 }
 
+.line { 
+    margin: 0 0 0 15px !important;  
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px dashed rgb(0, 0, 0);
+}
 
+@media screen and (max-width:500px)
+{
+    #ticket
+    {
+       flex:1 !important;
+    }
+    #ticket>.is-1
+    {
+        font-size:2.5rem !important;
+    }
+    #pass
+    {
+        font-size:2.3rem !important;
+    }
+    #qr
+    {
+        display:none;
+    }
+    .line
+    {
+        display:none;
+    }
+}
 
-
+#baa_guru
+{
+    cursor: pointer;
+}
 
 
 
@@ -172,10 +228,9 @@ video {
 
 /* effect-shine */
 .esp_logo {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(207, 6, 177, 0.6) 30%, rgb(5, 31, 124) 50%, rgba(164, 10, 72, 0.6) 70%);
+    
     -webkit-mask-size: 200%;
-    animation: shine 1.5s normal;
-    animation-iteration-count: infinite;
+    
   }
   
   @-webkit-keyframes shine {
@@ -190,3 +245,151 @@ video {
   }
 
 
+  .countdown
+{
+display:flex;
+flex-direction: row;
+font-size: 50px;
+text-align:center;
+align-items: center;
+justify-content: center;
+
+}
+.countdown>p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 0 5px 0 5px;
+    padding: 5px;
+    background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+    color: rgb(0, 0, 0);
+  
+}
+
+.footer {
+    padding: 20px;
+    background:black;
+    color: white;
+}
+  .animate-reveal {
+    
+    
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 2s ease-in 1 normal forwards;
+         -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            
+  }
+  
+  .animate-first {
+    -webkit-animation-delay: 0.5s;
+       -moz-animation-delay: 0.5s;
+         -o-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  
+  .animate-second {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+      -o-animation-delay: 1.5s;
+         animation-delay: 1.5s;
+  }
+  
+  .animate-third {
+    -webkit-animation-delay: 1.5s;
+       -moz-animation-delay: 1.5s;
+         -o-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+  
+  @-webkit-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  
