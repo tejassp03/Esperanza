@@ -38,9 +38,11 @@ body
 }
 .navbar
 {
+  height: 10vh;
     z-index: 10000;
     padding: 10px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
 }
 .esp_logo
@@ -77,7 +79,7 @@ body
 .hero
 {
    
-    
+    margin-top: 10vh;
 }
 .hero-body
 {
@@ -100,7 +102,7 @@ video {
    
   }
   .hero {
-    position: relative;
+    
     overflow: hidden;
     text-align: center;
     display: flex;
