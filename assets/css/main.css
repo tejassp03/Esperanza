@@ -184,13 +184,13 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 .line { 
-    margin: 0 0 0 15px !important;  
+    margin: 0 0 0 10px !important;  
     position: absolute;
     z-index: 100;
     top: 0;
     bottom: 0;
-    left: 50%;
-    border-left: 3px dashed rgb(0, 0, 0);
+    left:55%;
+    border-left: 3px dashed rgb(255, 255, 255);
 }
 
 @media screen and (max-width:500px)
@@ -398,3 +398,45 @@ justify-content: center;
   }
 
   
+/* (A) FULL SCREEN WRAPPER */
+#spinner {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0; left: 0; z-index: 100000;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 1);
+  transition: opacity 0.2s;
+}
+ 
+/* (B) CENTER LOADING SPINNER */
+#spinner img {
+  width: 30%;
+  position: absolute;
+  top: 40vh;
+  
+  animation: zoom-in-zoom-out 3s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+ 
+/* (C) SHOW & HIDE */
+#spinner.hide{
+  visibility: hidden;
+  opacity: 0;
+}
+#spinner.show {
+  visibility: visible;
+  opacity: 1;
+}

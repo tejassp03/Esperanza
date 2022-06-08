@@ -9,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet=" href="C:\xampp\htdocs\Esperanza\js.js">
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ -->    <link rel="stylesheet=" href="C:\xampp\htdocs\Esperanza\js.js">
+ <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <title>Esperanza 2K22</title>
 </head>
 <body >
+  <div id="spinner">
+    <img src="assets/images/esperanzalogo.jpg"/>
+  </div>
+
 
 <div class="home_container" style="display: flex;flex:1;flex-direction: column; height:100vh;">
 <!-- Navbar starts here -->
@@ -72,7 +78,7 @@
   <div class="hero-body">
     <div class="columns">
         <div class="column">
-            <p class="title is-1 animate-reveal animate-first">
+            <p class="title is-1 animate-reveal animate-first" style="padding:10px;color:rgb(255, 255, 255);font-weight:800;margin-top:5px">
                 COME JOIN US FOR AN ACTION PACKED EVENT.
             </p>
             <p id="baa_guru" style="background: -webkit-linear-gradient(#f6ff00, #31ff54);
@@ -95,11 +101,11 @@
             <div class="glasscard">
                 <div class="columns"  style="flex:1;display: flex;align-items: center  ">
                     <div class="column" id="ticket" style="flex:0.6;">
-                        <p class="title is-2" style="font-weight:300 !important;color:black;">
+                        <p class="title is-2" style="font-weight:500 !important;color:black;">
                             ESPERANZA 
                         </p>   
-                        <p class="title is-2" id="pass" style="color:black;">
-                            2 DAY PASS 🎟️
+                        <p class="title is-3" id="pass" style="color:black;">
+                            2 DAY <span style="color:#f1f6ff;">FREE</span> PASS 🎟️
                         </p>   
                         <p class="title is-1">
                             JUNE 24 | 25
@@ -140,6 +146,7 @@ background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);margin-bottom
     </ul>
   </div>
   <button onclick="topFunction()" id="myBtn" title="Go to top">👆</button>
+
 </body>
 <footer class="footer">
     <div class="content has-text-centered">
@@ -148,6 +155,7 @@ background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);margin-bottom
       </p>
     </div>
   </footer>
+  <div class="modal"><!-- Place at bottom of page --></div>
 <script>
     //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -171,7 +179,7 @@ function topFunction() {
 </script>
 <script>
     // The data/time we want to countdown to
-    var countDownDate = new Date("June 24, 2022 12:00:00").getTime();
+    var countDownDate = new Date("June 24, 2022 00:00:00").getTime();
 
     // Run myfunc every second
     var myfunc = setInterval(function() {
@@ -202,8 +210,23 @@ function topFunction() {
     }
     }, 1000);
 
+
+    // (A) SHOW & HIDE SPINNER
+function show () {
+  document.getElementById("spinner").classList.add("show");
+}
+function hide () {
+  document.getElementById("spinner").classList.remove("show");
+}
+
+$(window).load(function() {
+        $("#spinner").fadeOut("slow");
+});
+
+
+/* 
     $('#baa_guru')
-    .data('textToggle', 5)
+    .data('textToggle', 'Translate!')
     .hover(function (e) {
         var that = $(this);
 
@@ -226,7 +249,8 @@ function topFunction() {
 
         // set the new text
         that.text(textToSet);
-    });
+    }); */
+
 
 
     </script>
