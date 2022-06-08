@@ -210,6 +210,9 @@ function topFunction() {
     }
     }, 1000);
 
+    window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
     // (A) SHOW & HIDE SPINNER
 function show () {
