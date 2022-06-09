@@ -73,6 +73,7 @@ color:white !important;
     -webkit-text-fill-color: transparent;
 
 }
+
 .home-content
 {
     
@@ -81,6 +82,11 @@ color:white !important;
     justify-content: center;
 }  
 
+.navbar-menu
+{
+  background-color: #000000 !important;
+  padding:10px;
+}
 .sponsorcard
 {
   
@@ -275,11 +281,11 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 
-
-
-
-
-
+.esp_easter:hover
+{
+cursor: pointer;
+color: #f53eff;
+}
 
 /* effect-shine */
 .esp_logo {

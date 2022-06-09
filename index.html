@@ -36,9 +36,9 @@
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span style="background-color: white; height: 2px;width: 22px;" aria-hidden="true"></span>
+          <span style="background-color: white; height: 2px;width: 15px;" aria-hidden="true"></span>
+          <span style="background-color: white; height: 2px;width: 22px;" aria-hidden="true"></span>
         </a>
       </div>
       &emsp; &emsp;
@@ -67,7 +67,7 @@
 
 
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end is-desktop">
           <img class="dsatm_logo" style="width: 75%;object-fit:contain;" src="assets/images/dsatm_logo.png">
         </div>
       </div>
@@ -165,7 +165,7 @@
         goals
         and practices. Culture and creativity manifest themselves in almost all economic, social and other activities.
       </p>
-      <p>Each year DSATM comes with its annual extravagant inter college techno-cultural fest- Esperanza, where the
+      <p>Each year DSATM comes with its annual extravagant inter college techno-cultural fest- <span onclick="alert('Good Job! [Easter Egg #2]')" class="esp_easter">Esperanza</span>, where the
         family
         of DSATM gets to showcase their amazing talent! Esperanza is packed up with spellbinding cultural events,
         amusing
@@ -363,6 +363,28 @@
 
 
   $("#baa_guru").attr('title', 'Click to Translate!');
+
+
+
+  $(document).ready(function() {
+
+// Check for click events on the navbar burger icon
+$(".navbar-burger").click(function() {
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+
+});
+
+$(".navbar-item").click(function() {
+
+  $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+});
+});
+
+
 </script>
 <script>
   // The data/time we want to countdown to
