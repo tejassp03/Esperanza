@@ -8,6 +8,7 @@ body
     scroll-behavior: auto;
     font-family: 'Josefin Sans', sans-serif;    
 }
+
 hr{
  height: 10px;
  background-color: #000000;
@@ -86,6 +87,11 @@ color:white !important;
 {
   background-color: #000000 !important;
   padding:10px;
+  
+}
+.navbar-burger
+{
+  transition: all 300ms ease;
 }
 .sponsorcard
 {
@@ -271,12 +277,16 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 @media screen and (max-width:500px)
 
 {
-    .column-title{
 
-    }
+  .is-1
+  {
+    font-size:2rem !important;
+  }
+
     #ticket
     {
        flex:1 !important;
+       text-align: center;
     }
     #ticket>.is-1
     {
@@ -284,7 +294,7 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     }
     #pass
     {
-        font-size:2.3rem !important;
+        font-size:1.5rem !important;
     }
     #qr
     {
@@ -293,6 +303,11 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     .line
     {
         display:none;
+    }
+    .countdown
+    {
+      max-width: 100%;
+      font-size:2.2rem !important;
     }
 
     /* write your media query here divyanshiii */
