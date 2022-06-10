@@ -116,8 +116,10 @@ color:white !important;
 {
   background-color: #fce043;
   background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
-height: 100%;
-padding: 10px 10px 0 40px;
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 0 0  0 40px;
 }
 .column-right
 {
@@ -125,7 +127,17 @@ padding: 10px 10px 0 40px;
   color: rgb(0, 0, 0);
   background-color:#fff7cb;
   height: 100%;
+  float: right;
   padding: 40px;
+}
+@media screen and (max-width: 800px) {
+  .column-left, .column-right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .column-title{
+    height: 10%;
+    padding: 10px, 10px, 0px, 15px;
+  }
 }
 .lefthome
 {
@@ -142,7 +154,13 @@ padding: 10px 10px 0 40px;
    
     align-content: flex-start !important;
 }
-
+.aboutUs{
+  float: left;
+  width: 50%;
+  height: 200vh;
+  /* width: 100%; */
+  margin: 0
+}
 
 
 
@@ -236,6 +254,7 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     border: 10px solid white;
     text-align: left !important;
     width: 100%;
+    /* height: 80%; */
     
 }
 
@@ -250,7 +269,11 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 @media screen and (max-width:500px)
+
 {
+    .column-title{
+
+    }
     #ticket
     {
        flex:1 !important;
@@ -309,6 +332,7 @@ color: #f53eff;
   .countdown
 {
 display:flex;
+/* width: 100%; */
 flex-direction: row;
 font-size: 50px;
 text-align:center;
