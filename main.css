@@ -310,6 +310,12 @@ margin-top:-56px !important;
   {
       display:none;
   }
+  .button.is-info
+  {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    margin-top: -5px !important;
+  }
   .countdown
   {
     max-width: 95%;
