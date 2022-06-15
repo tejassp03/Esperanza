@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ -->
+    <link rel="stylesheet=" href="C:\xampp\htdocs\Esperanza\js.js" />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <style>
+      body {
+        background-color: pink;
+      }
+      .events-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+      }
+      #image {
+        width: 20vh;
+        height: 20vh;
+      }
+
+      .event-item{
+        padding: auto !important;
+        justify-content: center;
+      }
+      .text{
+        float: right;
+        padding-right: 8rem;
+        font-size: 1.99rem;
+      }
+    </style>
+    <title>Esperanza 2K22</title>
+  </head>
+
+  <body>
+    <div id="spinner">
+      <img src="assets/images/esperanzalogo.jpg" />
+    </div>
+
+    <!-- Navbar starts here -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      style="background-color: black !important"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <!-- logo goes here -->
+
+          <h2
+            class="title is-2 esp_logo"
+            style="text-align: right; line-height: 23px; font-weight: 800"
+          >
+            esperanza<br /><span style="padding: 0" class="title is-4 esp_2k22"
+              >2k22</span
+            >
+          </h2>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="true"
+          data-target="navbarBasicExample"
+        >
+          <span
+            style="background-color: white; height: 2px; width: 22px"
+            aria-hidden="true"
+          ></span>
+          <span
+            style="background-color: white; height: 2px; width: 15px"
+            aria-hidden="true"
+          ></span>
+          <span
+            style="background-color: white; height: 2px; width: 22px"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+      &emsp; &emsp;
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> About Us </a>
+          <a class="navbar-item" href="#sponsors"> Sponsors </a>
+          <a class="navbar-item"> Archives </a>
+          <a class="navbar-item"> Events & Competitions </a>
+          <a
+            class="navbar-item"
+            style="
+              background: -webkit-linear-gradient(#d9ff00, #c5dd28);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Register Now!
+          </a>
+        </div>
+        <div class="navbar-end is-desktop">
+          <img
+            class="dsatm_logo"
+            style="width: 100%; object-fit: contain"
+            src="assets/images/dsatm_logo.png"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+    <!-- Events -->
+    <div class="events-container">
+      <div class="event-item flex">
+        <a href="#">
+          <img src="/assets/images/categories/art.png" id="image" />
+
+          <p class="text" style="margin-left: 2rem;">Art</p>
+        </a>
+      </div>
+      <div class="event-item flex">
+        <a href="#">
+          <img src="/assets/images/categories/cooking.png" id="image" />
+          <p class="text" >Cooking</p>
+        </a>
+      </div>
+      <div class="event-item flex">
+        <a href="#" >
+          <img src="/assets/images/categories/cultural.png" id="image" />
+          <p class="text">Cultural</p>
+        </a>
+      </div>
+      <div class="event-item flex">
+        <a href="#">
+          <img src="/assets/images/categories/literature.png" id="image" />
+          <p class="text">Literature</p>
+        </a>
+      </div>
+      <br />
+      <div class="event-item flex">
+        <a href="#">
+          <img src="/assets/images/categories/recreational.png" id="image" />
+          <p class="text" >Gaming</p>
+        </a>
+      </div>
+      <div class="event-item flex">
+        <a href="#">
+          <img src="/assets/images/categories/technical.png" id="image" />
+          <p class="text">Technical</p>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      scrollFunction();
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-10vh";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+
+    $("#baa_guru").attr("title", "Click to Translate!");
+
+    $(document).ready(function () {
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function () {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+      });
+
+      $(".navbar-item").click(function () {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+      });
+    });
+  </script>
+  <script>
+    // The data/time we want to countdown to
+    var countDownDate = new Date("June 24, 2022 00:00:00").getTime();
+
+    // Run myfunc every second
+    var myfunc = setInterval(function () {
+      var now = new Date().getTime();
+      var timeleft = countDownDate - now;
+
+      // Calculating the days, hours, minutes and seconds left
+      var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+      // Result is output to the specific element
+      document.getElementById("days").innerHTML = days + "d ";
+      document.getElementById("hours").innerHTML = hours + "h ";
+      document.getElementById("mins").innerHTML = minutes + "m ";
+      document.getElementById("secs").innerHTML = seconds + "s ";
+
+      // Display the message when countdown is over
+      if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = "";
+        document.getElementById("hours").innerHTML = "";
+        document.getElementById("mins").innerHTML = "";
+        document.getElementById("secs").innerHTML = "";
+        document.getElementById("end").innerHTML = "LET'S GOOOOOO 🚀!!";
+      }
+    }, 1000);
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+
+    // (A) SHOW & HIDE SPINNER
+    function show() {
+      document.getElementById("spinner").classList.add("show");
+    }
+    function hide() {
+      document.getElementById("spinner").classList.remove("show");
+    }
+
+    $(window).load(function () {
+      $("#spinner").fadeOut("slow");
+    });
+
+    /*
+      $('#baa_guru')
+      .data('textToggle', 'Translate!')
+      .hover(function (e) {
+          var that = $(this);
+  
+          // get the text from data attribute
+          var textToSet = that.data('textToggle');
+  
+          // save the current text so it can be reverted
+          that.data('textToggle', that.text());
+  
+          // set the new text
+          that.text(textToSet);
+      }, function (e) {
+          var that = $(this);
+  
+          // get the text from data attribute
+          var textToSet = that.data('textToggle');
+  
+          // save the current text so it can be reverted
+          that.data('textToggle', that.text());
+  
+          // set the new text
+          that.text(textToSet);
+      }); */
+  </script>
+</html>

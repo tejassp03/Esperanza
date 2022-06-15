@@ -14,7 +14,7 @@
  -->
   <link rel="stylesheet=" href="C:\xampp\htdocs\Esperanza\js.js">
   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <title>Esperanza 2K22</title>x
+  <title>Esperanza 2K22</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
   <div class="home_container" style="display: flex;flex:1;flex-direction: column; height:100vh;">
     <!-- Navbar starts here -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation"
-      style="flex:0.08;background-color:black !important;">
+      style="background-color:black !important;">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
           <!-- logo goes here -->
@@ -55,7 +55,7 @@
           <a class="navbar-item" href="#Archives">
             Archives
           </a>
-          <a class="navbar-item">
+          <a class="navbar-item" href="event-desc.html">
             Events & Competitions
           </a>
           <a class="navbar-item" style="background: -webkit-linear-gradient(#d9ff00, #c5dd28);
@@ -74,8 +74,9 @@
     </nav>
     <!-- Navbar ends here -->
 
-    <section class="hero is-large is-info" style="flex:0.92">
-      <video playsinline autoplay muted loop poster="cake.jpg">
+    <section class="hero is-large is-info" style="height: 90vh;
+  ">
+      <video playsinline autoplay muted loop poster="assets/images/djcrowd.jpg">
         <source src="assets/images/crowdvideo.mp4" type="video/webm">
         Your browser does not support the video tag.
       </video>
@@ -92,7 +93,7 @@
               Baa Guru Maja Maadana!!
             </p>
 
-    <div class="animate-reveal animate-third" style="display: flex;flex-direction: column;">
+            <div class="animate-reveal animate-third" style="display: flex;flex-direction: column;">
               <div class="countdown ">
                 <p id="days"></p>
                 <p id="hours"></p>
@@ -142,8 +143,10 @@
     </section>
   </div>
 
-  <div class="columns is-vcentered content" id="aboutUs">
-    <div class="column column-left column-left-about ">
+
+  <div class="columns is-vcentered content" style="height: 100vh;width: 100%;margin: 0;" id="aboutUs">
+    <div class="column column-left">
+
       <p class="bd-notification is-primary">
       <h1 style="color: white;">About Us</h1>
       </p>
@@ -159,29 +162,10 @@
         </div>
       </div>
     </div>
-    <div class="column is-8 column-right subtitle is-4" style="line-height:37px" id="aboutUs-description">
+    <div class="column is-8 column-right subtitle is-4" style="line-height:37px">
 
-      <p>&nbsp;Dayananda Sagar Academy of Technology and Management with its heritage has fortified numerous students
-        lives to peaks of success within their 4
-        years of graduate life. It has a scintillating atmosphere with lush greenery, bringing inspiration and new
-        experience to learn. Culture, Art & Performances, sports & fitness blend with high academic education brings out
-        the inner potential of the student to the maximum.</p>
-      <p>Culture plays an important role in the development of DSI. It represents a set of shared attitudes, values,
-        goals
-        and practices. Culture and creativity manifest themselves in almost all economic, social and other activities.
-      </p>
-      <p>Each year DSATM comes with its annual extravagant inter college techno-cultural fest- <span onclick="alert('Good Job! [Easter Egg #2]')" class="esp_easter">Esperanza</span>, where the
-        family
-        of DSATM gets to showcase their amazing talent! Esperanza is packed up with spellbinding cultural events,
-        amusing
-        activities, fun filled games, line up of stellar visual artists and what not. This is not just it; at Esperanza,
-        the college will be announcing the champions of the inter-department competitions conducted by the cultural club
-        of DSATM, Antaragni. The winning department will be rewarded with an exquisite trophy.
-        Immerse yourself in the vibe and get immersed in the fun and frolic. We are all really excited for you to grace
-        us
-        with your presence on the 24th and 25th of June, 2022. </p>
-
-      </h2>
+    
+  
     </div>
 
   </div>
@@ -189,9 +173,9 @@
   
 
   <div class="columns is-vcentered content" style="height: 100vh;width: 100%;margin: 0;" id="sponsors">
-    <div class="column column-left column-title">
+    <div class="column column-left">
       <p class="bd-notification is-primary">
-      <h1 style="color: white; ">Sponsors</h1>   
+      <h1 style="color: white;">Sponsors</h1>   
       </p>
       <!-- <div class="item">
         <div class="polaroid"><img src="assets/images/naac.jpg">
@@ -209,41 +193,7 @@
 
       <div class="row">
         <div class="sponsorcard">
-          <h3 class="sponsortype" >
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype" >
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype" >
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-
-      </div>
-
-      <div class="row">
-        <div class="sponsorcard">
-          <h3 class="sponsortype" >
+          <h3 class="sponsortype">
             Title Sponsor
           </h3>
 
@@ -263,7 +213,7 @@
         </div>
 
         <div class="sponsorcard">
-          <h3 class="sponsortype" >
+          <h3 class="sponsortype">
             Title Sponsor
           </h3>
 
@@ -287,7 +237,7 @@
         </div>
 
         <div class="sponsorcard">
-          <h3 class="sponsortype" >
+          <h3 class="sponsortype">
             Title Sponsor
           </h3>
 
@@ -297,7 +247,7 @@
         </div>
 
         <div class="sponsorcard">
-          <h3 class="sponsortype"  >
+          <h3 class="sponsortype">
             Title Sponsor
           </h3>
 
@@ -308,6 +258,40 @@
 
 
       </div>
+
+      <div class="row">
+        <div class="sponsorcard">
+          <h3 class="sponsortype">
+            Title Sponsor
+          </h3>
+
+          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
+
+
+        </div>
+
+        <div class="sponsorcard">
+          <h3 class="sponsortype">
+            Title Sponsor
+          </h3>
+
+          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
+
+
+        </div>
+
+        <div class="sponsorcard">
+          <h3 class="sponsortype">
+            Title Sponsor
+          </h3>
+
+          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
+
+
+        </div>
+
+
+      </div>  
 
 
     </div>
