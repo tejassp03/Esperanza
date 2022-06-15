@@ -22,8 +22,45 @@
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <style>
       body {
-        background-color: pink;
+        background: linear-gradient(135deg, #f53eff 0%,#7367F0 100%);
       }
+      .dropdown {
+  position: center;
+  /* display: inline-block; */
+  float: left;
+  clear:left;
+
+      }
+      .event-item:hover
+      {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+  padding: auto;
+
+      }
+      .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
       .events-container {
         display: flex;
         justify-content: center;
@@ -38,12 +75,14 @@
       }
 
       .event-item{
-        padding: auto !important;
+        padding: 10px;
         justify-content: center;
+        height: 30%;  
+        float:center;
       }
       .text{
-        float: right;
-        padding-right: 8rem;
+        align-items: center;
+        padding-right: 97rem;
         font-size: 1.99rem;
       }
     </style>
@@ -128,43 +167,102 @@
     <!-- Navbar ends here -->
     <!-- Events -->
     <div class="events-container">
-      <div class="event-item flex">
-        <a href="#">
-          <img src="/assets/images/categories/art.png" id="image" />
-
-          <p class="text" style="margin-left: 2rem;">Art</p>
-        </a>
+      <div class="dropdown" >
+      <div class="event-item">
+            <img src="/assets/images/categories/art.png" style="float: left;" id="image" />          
+              <!-- <p  style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Art<p> -->
+                <p  style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Art</p>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <hr class="line1" style="height: 0.5px; color: #808080">
+                  <a href="#">Link 2</a>
+                  <hr class="line1" style="height: 0.5px; color: #808080">
+                  <a href="#">Link 3</a>
+      </div>     
+        </div>
       </div>
-      <div class="event-item flex">
-        <a href="#">
+      <div class="dropdown">
+      <div class="event-item">
           <img src="/assets/images/categories/cooking.png" id="image" />
-          <p class="text" >Cooking</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" >Cooking</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+            <a href="#">Link 2</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 3</a>
+          </div>
         </a>
       </div>
+      </div>
+      <div class="dropdown">
       <div class="event-item flex">
-        <a href="#" >
           <img src="/assets/images/categories/cultural.png" id="image" />
-          <p class="text">Cultural</p>
+          <p style="font-size: 1.99rem;color: aliceblue;">Cultural</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 2</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 3</a>
+          </div>
         </a>
       </div>
+      </div>
+      <div class="dropdown">
       <div class="event-item flex">
-        <a href="#">
+      
           <img src="/assets/images/categories/literature.png" id="image" />
-          <p class="text">Literature</p>
+          <p style="font-size: 1.99rem;color: aliceblue;">Literature</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 2</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 3</a>
+          </div>
         </a>
+      </div>
       </div>
       <br />
+      <div class="dropdown">
       <div class="event-item flex">
-        <a href="#">
           <img src="/assets/images/categories/recreational.png" id="image" />
-          <p class="text" >Gaming</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" >Gaming</p>
+          <div class="dropdown-content">
+            <a href="#">Valorant</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">COD Mobile</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">BGMI</a>
+          </div>
         </a>
       </div>
+      </div>
+      <div class="dropdown">
       <div class="event-item flex">
-        <a href="#">
-          <img src="/assets/images/categories/technical.png" id="image" />
-          <p class="text">Technical</p>
+        
+          <img src="/assets/images/categories/technical.png" style="float: left;" id="image" />
+          <p style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Technical</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 2</a>
+            <hr class="line1" style="height: 0.5px; color: #808080">
+
+            <a href="#">Link 3</a>
+          </div>
         </a>
+        
+      </div>
       </div>
     </div>
   </body>
