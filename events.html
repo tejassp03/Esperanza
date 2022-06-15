@@ -21,30 +21,69 @@
     <link rel="stylesheet=" href="C:\xampp\htdocs\Esperanza\js.js" />
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <style>
+      
+@media screen and (max-width:500px)
+{
+  
+  .events-container{
+    width: 100%;
+    height: 100%;
+  }
+  .card{
+    padding-left: 20rem;
+  }
+  /* write your media query here divyanshiii */
+} 
+.cards {
+                        display: flex;
+
+                        /* Put a card in the next row when previous cards take all width */
+                        flex-wrap: wrap;
+
+                        margin-left: -8px;
+                        margin-right: -8px;
+                    }
+
+                    .cards-item {
+                        /* There will be 4 cards per row */
+                        flex-basis: 10%;
+
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+
+    
+html {
+  scroll-behavior: smooth;
+}
+
       body {
+        scroll-behavior: auto;
+  font-family: 'Josefin Sans', sans-serif;  
         background: linear-gradient(135deg, #f53eff 0%,#7367F0 100%);
+        width: 100%;
       }
       .dropdown {
-  position: center;
-  /* display: inline-block; */
-  float: left;
-  clear:left;
+          position: center;
+          /* display: inline-block; */
+          float: left;
+          clear:left;
 
       }
-      .event-item:hover
+      .cards-item:hover
       {
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-  transform: translate3d(0px, -1px, 0px);
-  padding: auto;
+          box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+          transform: translate3d(0px, -1px, 0px);
+          padding: auto;
 
       }
       .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
 }
 .dropdown-content a {
   color: black;
@@ -74,7 +113,7 @@
         height: 20vh;
       }
 
-      .event-item{
+      .cards-item{
         padding: 10px;
         justify-content: center;
         height: 30%;  
@@ -103,7 +142,7 @@
       style="background-color: black !important"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="index.html">
           <!-- logo goes here -->
 
           <h2
@@ -141,8 +180,8 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item" href="index.html"> About Us </a>
-          <a class="navbar-item" href="#sponsors"> Sponsors </a>
-          <a class="navbar-item"> Archives </a>
+          <a class="navbar-item" href="index.html"> Sponsors </a>
+          <a class="navbar-item" href="index.html"> Archives </a>
           <a class="navbar-item"> Events & Competitions </a>
           <a
             class="navbar-item"
@@ -166,25 +205,28 @@
     </nav>
     <!-- Navbar ends here -->
     <!-- Events -->
+    
+
     <div class="events-container">
-      <div class="dropdown" >
-      <div class="event-item">
+      <div class="cards">
+        <div class="dropdown" >
+        <div class="cards__item">
             <img src="/assets/images/categories/art.png" style="float: left;" id="image" />          
               <!-- <p  style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Art<p> -->
                 <p  style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Art</p>
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
+                  <a href="event-desc.html">Link 1</a>
                   <hr class="line1" style="height: 0.5px; color: #808080">
-                  <a href="#">Link 2</a>
+                  <a href="event-desc.html">Link 2</a>
                   <hr class="line1" style="height: 0.5px; color: #808080">
-                  <a href="#">Link 3</a>
-      </div>     
+                  <a href="event-desc.html">Link 3</a>
+          </div>     
         </div>
       </div>
       <div class="dropdown">
-      <div class="event-item">
+      <div class="cards-item">
           <img src="/assets/images/categories/cooking.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;" >Cooking</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" >Culinary</p>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -197,7 +239,7 @@
       </div>
       </div>
       <div class="dropdown">
-      <div class="event-item flex">
+      <div class="cards-item flex">
           <img src="/assets/images/categories/cultural.png" id="image" />
           <p style="font-size: 1.99rem;color: aliceblue;">Cultural</p>
           <div class="dropdown-content">
@@ -213,7 +255,7 @@
       </div>
       </div>
       <div class="dropdown">
-      <div class="event-item flex">
+      <div class="cards-item flex">
       
           <img src="/assets/images/categories/literature.png" id="image" />
           <p style="font-size: 1.99rem;color: aliceblue;">Literature</p>
@@ -231,7 +273,7 @@
       </div>
       <br />
       <div class="dropdown">
-      <div class="event-item flex">
+      <div class="cards-item flex">
           <img src="/assets/images/categories/recreational.png" id="image" />
           <p style="font-size: 1.99rem;color: aliceblue;" >Gaming</p>
           <div class="dropdown-content">
@@ -247,10 +289,10 @@
       </div>
       </div>
       <div class="dropdown">
-      <div class="event-item flex">
+      <div class="cards-item flex">
         
           <img src="/assets/images/categories/technical.png" style="float: left;" id="image" />
-          <p style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Technical</p>
+          <p style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Techno</p>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -262,6 +304,7 @@
           </div>
         </a>
         
+      </div>
       </div>
       </div>
     </div>
