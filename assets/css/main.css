@@ -48,6 +48,7 @@ color:white !important;
 }
 .navbar
 {
+
 transition: all 300ms ease;
 height: 10vh;
   z-index: 10000;
@@ -111,27 +112,166 @@ width: 80%;
 
 .row
 {
-width: 100%;
-justify-content: center;
-display: flex;
-flex-direction: row;
-margin-bottom: 10px;
+
+  width: 100%;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  height: 200px;
+
 }
 
+.row-archives
+{
+  width: 100%;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  height: 200px;
+}
 .column-left
 {
-background-color: #fce043;
-background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
-height: 100%;
-padding: 10px 10px 0 40px;
+
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  height: 100%;
+  width: 50%;
+  float: left;
+  /* padding: 0 0  0 40px; */
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  min-width: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #808080;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: center;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-div{
+  position: center;
+  width: 300px;
+  min-width: 250%;
+  
+  align-items: stretch;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 .column-right
 {
-border: 5px solid white;
-color: rgb(0, 0, 0);
-background-color:#fff7cb;
-height: 100%;
-padding: 40px;
+  border: 5px solid white;
+  color: rgb(0, 0, 0);
+  background-color:#fff7cb;
+  height: 100%;
+  float: right;
+  padding: 40px;
+}
+@media screen and (max-width: 800px) {
+  .column-left, .column-right {
+    width: 100%;
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .sponsorcard{
+    font-size: 11px;
+    
+    
+  }
+  .column-left-about{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 100px;
+    padding-left: 15px;
+  }
+  .column-title{
+    height: 10%;
+    padding-bottom: 100px;
+    /* padding: auto; */
+    /* padding: 10px, 10px, 0px, 15px; */
+  }
+  .polaroid{
+    display: none;
+  }
+
+
 }
 .lefthome
 {
