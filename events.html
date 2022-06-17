@@ -26,8 +26,9 @@
 {
   .events-header{
     top: 0;
-    margin-bottom: 80%;
+    margin-bottom: 60%;
     margin-right: 50%;
+    margin-left: -20%;
     
   }
   .events-container{
@@ -37,6 +38,10 @@
   .card{
     padding-left: 20rem;
   }
+
+  .navbar{
+    height: 13vh
+  }
   /* write your media query here divyanshiii xD*/
 } 
 .cards {
@@ -45,8 +50,8 @@
                         /* Put a card in the next row when previous cards take all width */
                         flex-wrap: wrap;
 
-                        margin-left: -8px;
-                        margin-right: -8px;
+                        margin-left: 0%;
+                        margin-right: -2%;
                     }
 
                     .cards-item {
@@ -98,6 +103,13 @@ html {
   display: block;
 }
 
+.responsiveImage {
+  width: 100%;
+  height: auto;
+}
+
+
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -138,7 +150,7 @@ html {
 
   <body>
     <div id="spinner">
-      <img src="assets/images/esperanzalogo.jpg" />
+      <img src="assets/images/esperanzalogo.jpg"/>
     </div>
 
     <!-- Navbar starts here -->
@@ -189,11 +201,11 @@ html {
         <div class="navbar-start">
           <a class="navbar-item" href="index.html#aboutUs"> About Us </a>
 
-          <a class="navbar-item" href="index.html#sponsors"> Sponsors </a>
+          <!-- <a class="navbar-item" href="index.html#sponsors"> Sponsors </a> -->
 
           <a class="navbar-item" href="index.html#Archives"> Archives </a>
 
-          <a class="navbar-item"> Events & Competitions </a>
+          <a class="navbar-item" href="events.html"> Events & Competitions </a>
           <a
             class="navbar-item"
             style="
@@ -218,9 +230,9 @@ html {
     </nav>
     <!-- Navbar ends here -->
     <!-- Events -->
-    
-    <div class="events-header" style = "position: relative; left: 30%;">
-      <h1 style="font-size: 4vw;color: aliceblue;padding-top: 20vh;margin-bottom: -20vh;">Event Categories</p>
+    </div>
+    <div class="events-header" style = "position: relative; left: 33%;">
+      <h1 style="font-size: 3rem; color: aliceblue;padding-top: 20vh; margin-bottom: -30vh;">&nbsp;&nbsp;&nbsp;Events Categories</p>
     </div>
 
     <div class="events-container">
@@ -230,7 +242,7 @@ html {
             <!-- <img src="/assets/images/categories/art.png" style="float: left;" id="image" />   -->
             <img src="assets/images/categories/art.png" id="image"/>          
               <!-- <p  style="margin-left: 2rem;font-size: 1.99rem;color: aliceblue;">Art</p> -->
-                <p  style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">Crafting</p>
+                <p  style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">&nbsp;Crafting&nbsp;</p>
                 <!-- <div class="dropdown-content">
                   <a href="event-desc.html">50 shades of Art</a>
                   <hr class="line1" style="height: 0.5px; color: #808080">
@@ -243,7 +255,7 @@ html {
       <div class="dropdown">    
       <div class="cards-item" onclick="location.href='event-desc.html';" style="cursor: pointer;">
           <img src="assets/images/categories/cooking.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">Culinary</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">&nbsp;Culinary&nbsp;</p>
           <!-- <div class="dropdown-content">
             <a href="#">Aao Khao Jao!</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -255,7 +267,7 @@ html {
       <div class="dropdown">
       <div class="cards-item" onclick="location.href='event-desc.html';" style="cursor: pointer;">
           <img src="assets/images/categories/cultural.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">Cultural</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">&nbsp;Cultural&nbsp;</p>
           <!-- <div class="dropdown-content">
             <a href="event-desc.html">Feet on Fire</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -300,7 +312,7 @@ html {
       <div class="cards-item" onclick="location.href='event-desc.html';" style="cursor: pointer;">
       
           <img src="assets/images/categories/literature.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">Literature</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" href="event-desc.html">&nbsp;Literary&nbsp;</p>
           <!-- <div class="dropdown-content">
             <a href="event-desc.html">Debate</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -315,7 +327,7 @@ html {
       <div class="dropdown">
       <div class="cards-item" onclick="location.href='event-desc.html';" style="cursor: pointer;">
           <img src="assets/images/categories/recreational.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;" >Gameplay</p>
+          <p style="font-size: 1.99rem;color: aliceblue;" >&nbsp;Gaming&nbsp;</p>
           <!-- <div class="dropdown-content">
             <a href="event-desc.html">Battle of Radiants</a>
             <hr class="line1" style="height: 0.5px; color: #808080">
@@ -332,7 +344,7 @@ html {
       <div class="cards-item" onclick="location.href='event-desc.html';" style="cursor: pointer;">
         
           <img src="assets/images/categories/technical.png" id="image" />
-          <p style="font-size: 1.99rem;color: aliceblue;">Technology</p>
+          <p style="font-size: 1.99rem;color: aliceblue;">&nbsp;&nbsp;Techno&nbsp;&nbsp;&nbsp;</p>
           <!-- <div class="dropdown-content">
             <a href="event-desc.html">Hackathon</a>
              <hr class="line1" style="height: 0.5px; color: #808080"> 
