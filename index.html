@@ -16,14 +16,44 @@
   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <title>Esperanza 2K22</title>
 </head>
+<style>
+  @media screen and (max-width:500px)
+  {
+    .navbar{
+      height: 13vh;
+    }
 
+    .hero-body{
+      padding-top: 20vh;
+    }
+
+    .countdown{
+      max-width: 80vh;
+    }
+
+    .home_container{
+      max-height: 118vh !important;
+    }
+
+    .navbar-burger{
+      margin-left: 11.5vh;
+    }
+
+    #navbar-icon{
+      margin-left: -60vh !important;
+      margin-top: -10vh;
+      margin-bottom: -15vh;
+    }
+
+  }
+</style>
 <body>
   <div id="spinner">
     <img src="assets/images/esperanzalogo.jpg" />
   </div>
 
 
-  <div class="home_container" style="display: flex;flex:1;flex-direction: column; height:100vh;">
+  <div class="home_container" style="display: flex;flex:1;flex-direction: column; max-height:100vh;">
     <!-- Navbar starts here -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation"
       style="background-color:black !important;">
@@ -31,11 +61,11 @@
         <a class="navbar-item" href="#">
           <!-- logo goes here -->
 
-          <h2 class="title is-2 esp_logo" style="text-align: right;line-height:23px;font-weight: 800;">
+          <h2 class="title is-1 esp_logo" style="text-align: right;line-height:23px;font-weight: 800; margin-left: -1.5vh;">
             esperanza<br><span style="padding: 0;" class="title is-4 esp_2k22">2k22</span></h2>
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample" >
           <span style="background-color: white; height: 2px;width: 22px;" aria-hidden="true"></span>
           <span style="background-color: white; height: 2px;width: 15px;" aria-hidden="true"></span>
           <span style="background-color: white; height: 2px;width: 22px;" aria-hidden="true"></span>
@@ -55,7 +85,7 @@
           <a class="navbar-item" href="#Archives">
             Archives
           </a>
-          <a class="navbar-item" href="events.html">
+          <a class="navbar-item" href="https://drive.google.com/file/d/1OfqyZumD9ZOqsOFpXi60Fzr4AtH6C-Mm/view?usp=sharing">
             Events & Competitions
           </a>
           <a class="navbar-item" style="background: -webkit-linear-gradient(#d9ff00, #c5dd28);
@@ -63,42 +93,38 @@
           -webkit-text-fill-color: transparent;" href="https://docs.google.com/forms/d/e/1FAIpQLSevutVI3NfyfSnP9iEwKvBPRk2XJsbPCN8GOFcvA5Y8T_Zt6A/viewform">
             Register for Musical Night!
           </a>
-
-
-
         </div>
-        <div class="navbar-end is-desktop">
-          <img class="dsatm_logo" style="width: 100%;object-fit:contain;" src="assets/images/dsatm_logo.png">
+        <div class="navbar-end is-desktop" id="navbar-icon" onClick="document.location.href='https://www.dsatm.edu.in/'">
+          <img class="dsatm_logo" style="width: 100%;object-fit:scale-down;" src="assets/images/dsatm_logo.png">
         </div>
       </div>
     </nav>
     <!-- Navbar ends here -->
 
-    <section class="hero is-large is-info" style="height: 90vh;
-  ">
-      <video playsinline autoplay muted loop poster="assets/images/djcrowd.jpg">
+    <section id="pass-date" class="hero is-large is-info" style="height: 150vh; background-color: #080808;" >
+      <video playsinline autoplay muted loop poster="assets/images/djcrowd.jpg" >
         <source src="assets/images/crowdvideo.mp4" type="video/webm">
         Your browser does not support the video tag.
       </video>
       <div class="hero-body">
-        <div class="columns">
+        <div class="columns" >
           <div class="column">
-            <p class="title is-1 animate-reveal animate-first"
-              style="padding:10px;color:rgb(255, 255, 255);font-weight:800;margin-top:5px">
-              COME JOIN US FOR AN ACTION PACKED EVENT.
+            <p class="title is-1 animate-reveal"
+              style="padding:10px;color:rgb(255, 255, 255);font-weight:800;">
+              COME JOIN US FOR AN ACTION PACKED EVENT!
             </p>
             <p id="baa_guru" onclick="alert('Learn Kannada Bro! [Easter Egg #1]')" style="background: -webkit-linear-gradient(#f6ff00, #31ff54);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;" class="title is-1 animate-reveal animate-second">
+            -webkit-text-fill-color: transparent;" class="title is-1 animate-reveal animate-second" >
               Baa Guru Maja Maadana!!
             </p>
 
-            <div class="animate-reveal animate-third" style="display: flex;flex-direction: column;">
-              <div class="countdown ">
-                <p id="days"></p>
-                <p id="hours"></p>
-                <p id="mins"></p>
-                <p id="secs"></p>
+            <div class="animate-reveal animate-second" style="display: flex;flex-direction: column;" >
+              <div class="countdown">
+                <p id="days" style="font-size: 80%;"></p>
+                <p id="hours" style="font-size: 80%;"></p>
+                <p id="mins" style="font-size: 80%;"></p>
+                <p id="secs" style="font-size: 80%;"></p>
                 <h2 id="end"></h2>
               
               </div>
@@ -109,19 +135,19 @@
             
           </div>
           <div class="column">
-
             <div class="glasscard animate-reveal animate-second">
-              <div class="columns" style="flex:1;display: flex;align-items: center  ">
+              <div class="columns" style="flex:auto; display: flex; align-items: center; cursor: pointer;" onclick="document.location.href = 'https://www.instagram.com/antaragni_dsatm/'">
                 <div class="column" id="ticket" style="flex:0.6;">
-                  <p class="title is-2" style="font-weight:500 !important;color:black;">
+                  <p class="title is-2" style="font-weight:500 !important;color:black; font-size: xx-large;">
                     ESPERANZA
                   </p>
                   <p class="title is-3" id="pass" style="color:black;">
                     2 DAY <span style="color:#f1f6ff;">FREE</span> PASS 🎟️
                   </p>
-                  <p class="title is-2">
+                  <p class="title is-2" style="font-size: 2rem ;">
                     JUNE 24 | 25
                   </p>
+                  <!-- <a href="https://www.instagram.com/antaragni_dsatm/">Click here if QR code doesn't generate</a> -->
                 </div>
                 <div class="line"></div>
                 <div class="column" id="qr" style="flex:0.4;">
@@ -144,11 +170,11 @@
   </div>
 
 
-  <div class="columns is-vcentered content" style="height: 118vh;width: 100%;margin: 0;" id="aboutUs">
+  <div class="columns is-vcentered content" style="height: 115vh;width: 100%;margin: 0;" id="aboutUs">
     <div class="column column-left">
 
       <p class="bd-notification is-primary">
-      <h1 style="color: white;">&emsp;&emsp;About Us</h1>
+      <h1 style="color: white; font-size: 6vh;">&emsp;&emsp;About Us</h1>
       </p>
       <div class="item">
         <div class="polaroid"><img src="assets/images/naac.jpg">
@@ -169,134 +195,6 @@
     </div>
 
   </div>
-
-  
-
-  <!-- <div class="columns is-vcentered content" style="height: 100vh;width: 100%;margin: 0;" id="sponsors">
-    <div class="column column-left">
-      <p class="bd-notification is-primary">
-      <h1 style="color: white;">Sponsors</h1>   
-      </p> -->
-      <!-- <div class="item">
-        <div class="polaroid"><img src="assets/images/naac.jpg">
-          <div class="caption subtitle is-4" style="font-weight: bold;">NAAC Accreditation A+</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="polaroid"><img src="https://www.targetadmission.com/img/colleges/newc/4553-179823.jpg">
-          <div class="caption subtitle is-4" style="font-weight: bold;"><span style="font-weight: bold">DSATM</span>
-            Campus</div>
-        </div>
-      </div> -->
-    <!-- </div>
-    <div class="column is-8 column-right subtitle is-4" style="line-height:37px">
-
-      <div class="row">
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-
-      </div>
-
-      <div class="row">
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-
-      </div>
-
-      <div class="row">
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-        <div class="sponsorcard">
-          <h3 class="sponsortype">
-            Title Sponsor
-          </h3>
-
-          <img src="https://anchitspace.com/wp-content/uploads/2021/01/zudio-logo.jpg" alt="">
-
-
-        </div>
-
-
-      </div>  
-
-
-    </div>
-  
-</div> -->
 
   <div class="columns is-vcentered content" style="height: 100vh;width: 100%;margin: 0;"id="Archives">
     <!-- <div class="column column-left column-title ">
@@ -438,24 +336,42 @@ $(".navbar-item").click(function() {
 <script>
   // The data/time we want to countdown to
   var countDownDate = new Date("June 24, 2022 00:00:00").getTime();
-
+    document.getElementById("days").innerHTML ="00"
+    document.getElementById("hours").innerHTML = "000"
+    document.getElementById("mins").innerHTML = "000"
+    document.getElementById("secs").innerHTML = "000"
   // Run myfunc every second
   var myfunc = setInterval(function () {
 
     var now = new Date().getTime();
     var timeleft = countDownDate - now;
 
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
     // Calculating the days, hours, minutes and seconds left
-    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
     // Result is output to the specific element
     document.getElementById("days").innerHTML = days + "d "
-    document.getElementById("hours").innerHTML = hours + "h "
-    document.getElementById("mins").innerHTML = minutes + "m "
-    document.getElementById("secs").innerHTML = seconds + "s "
+    if(hours<10)
+      document.getElementById("hours").innerHTML = "0" + hours + "h "
+    else
+      document.getElementById("hours").innerHTML = hours + "h "
+    if(minutes<10)
+      document.getElementById("mins").innerHTML = "0" + minutes + "m "
+    else
+      document.getElementById("mins").innerHTML = minutes + "m "
+    if(seconds<10)
+      document.getElementById("secs").innerHTML = "0" + seconds + "s "
+    else
+      document.getElementById("secs").innerHTML = seconds + "s "
+  
 
     // Display the message when countdown is over
     if (timeleft < 0) {
