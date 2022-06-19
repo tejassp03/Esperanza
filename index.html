@@ -17,7 +17,7 @@
   <title>Esperanza 2K22</title>
 </head>
 <style>
-  @media screen and (max-width:500px)
+/*   @media screen and (max-width:500px)
   {
     .navbar{
       height: 13vh;
@@ -45,9 +45,9 @@
       margin-bottom: -15vh;
     }
 
-  }
+  } */
 </style>
-<body>
+<div>
   <div id="spinner">
     <img src="assets/images/esperanzalogo.jpg" />
   </div>
@@ -61,7 +61,7 @@
         <a class="navbar-item" href="#">
           <!-- logo goes here -->
 
-          <h2 class="title is-1 esp_logo" style="text-align: right;line-height:23px;font-weight: 800; margin-left: -1.5vh;">
+          <h2 class="title is-2 esp_logo" style="text-align: right;line-height:23px;font-weight: 800; margin-left: -1.5vh;">
             esperanza<br><span style="padding: 0;" class="title is-4 esp_2k22">2k22</span></h2>
         </a>
 
@@ -101,7 +101,7 @@
     </nav>
     <!-- Navbar ends here -->
 
-    <section id="pass-date" class="hero is-large is-info" style="height: 150vh; background-color: #080808;" >
+    <section id="pass-date" class="hero is-large is-info" style="height: 100vh; background-color: #080808;" >
       <video playsinline autoplay muted loop poster="assets/images/djcrowd.jpg" >
         <source src="assets/images/crowdvideo.mp4" type="video/webm">
         Your browser does not support the video tag.
@@ -138,13 +138,13 @@
             <div class="glasscard animate-reveal animate-second">
               <div class="columns" style="flex:auto; display: flex; align-items: center; cursor: pointer;" onclick="document.location.href = 'https://www.instagram.com/antaragni_dsatm/'">
                 <div class="column" id="ticket" style="flex:0.6;">
-                  <p class="title is-2" style="font-weight:500 !important;color:black; font-size: xx-large;">
+                  <p class="title is-2" style="font-weight:500 !important;color:black; ">
                     ESPERANZA
                   </p>
                   <p class="title is-3" id="pass" style="color:black;">
                     2 DAY <span style="color:#f1f6ff;">FREE</span> PASS 🎟️
                   </p>
-                  <p class="title is-2" style="font-size: 2rem ;">
+                  <p class="title is-2" style="">
                     JUNE 24 | 25
                   </p>
                   <!-- <a href="https://www.instagram.com/antaragni_dsatm/">Click here if QR code doesn't generate</a> -->
@@ -170,11 +170,10 @@
   </div>
 
 
-  <div class="columns is-vcentered content" style="height: 115vh;width: 100%;margin: 0;" id="aboutUs">
+  <div class="columns is-vcentered content" style="width: 100%;margin: 0;height: 100vh;" id="aboutUs">
     <div class="column column-left">
-
       <p class="bd-notification is-primary">
-      <h1 style="color: white; font-size: 6vh;">&emsp;&emsp;About Us</h1>
+      <h1 style="color: white;">About Us</h1>
       </p>
       <div class="item">
         <div class="polaroid"><img src="assets/images/naac.jpg">
@@ -189,24 +188,26 @@
       </div>
     </div>
     <div class="column is-8 column-right subtitle is-4" style="line-height:37px">
-
+      <h3 class="p-3" style="color: black;" id="aboutUstitle">About Us</h3>
     
   
     </div>
 
   </div>
 
-  <div class="columns is-vcentered content" style="height: 100vh;width: 100%;margin: 0;"id="Archives">
+
+  <hr>
+<div class="columns is-vcentered content" style="height: 100vh;width: 100vw;margin: 0;"id="Archives">
     <!-- <div class="column column-left column-title ">
       <p class="bd-notification is-primary">
       <h1 style="color: white;">Archives</h1>
       </p>
     
     </div> -->
-  <div class="column is-8 column-right subtitle is-4" style="background-image: url(assets/images/bc.png); background-repeat:no-repeat;width: 100% ;background-size: cover; padding-left: 25%;"  id="aboutUs-description">
+  <div class=" is-8 column-right subtitle is-4" style="background-image: url(assets/images/bc.png); background-repeat:no-repeat;width: 100% ;background-size: cover;"  id="aboutUs-description">
 
-      <div class="archive-image-1"style="height: 100vh ;width:40vh;color: #f1f6ff;">
-        <h1 style="padding-left: 100%;width:200%;color: aliceblue;">Archives</h1>
+      <div class="archive-image-1" style="color: #f1f6ff; display:flex;align-items:center;flex-direction: column;">
+        <h1 style="color: aliceblue;">Archives</h1>
         
         
           <div class="slideshow-container " style="box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
@@ -259,14 +260,14 @@
 
 </div>
 
-
+</div>
   <button onclick="topFunction()" id="myBtn" title="Go to top">👆</button>
 
 </body>
 <footer class="footer">
   <div class="content has-text-centered">
     <p class="title is-5" style="color: white;">
-      Esperanza fans counter : <strong style="font-size:25px;color: rgb(255, 62, 255);">10,000</strong>
+      Fans Counter : <strong style="font-size:25px;color: rgb(255, 62, 255);">10,000</strong>
     </p>
   </div>
 </footer>

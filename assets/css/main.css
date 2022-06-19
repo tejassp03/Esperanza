@@ -1,10 +1,13 @@
 
 html {
   scroll-behavior: smooth;
+  
+ 
 }
 body
 {
-  
+  width: 100vw !important;
+  overflow-x: hidden !important;
   scroll-behavior: auto;
   font-family: 'Josefin Sans', sans-serif;    
 }
@@ -145,10 +148,13 @@ width: 80%;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  min-width: 100vh;
+  max-width: 60%;
+  
   position: relative;
   margin: auto;
+}
+.slideshow-container>img {
+  width: 50%;
 }
 
 /* Hide the images by default */
@@ -245,34 +251,7 @@ width: 80%;
   float: right;
   padding: 40px;
 }
-@media screen and (max-width: 800px) {
-  .column-left, .column-right {
-    width: 100%;
-     /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  .sponsorcard{
-    font-size: 11px;
-    
-    
-  }
-  .column-left-about{
-    padding-bottom: 0px;
-    padding-top: 0px;
-    height: 100px;
-    padding-left: 15px;
-  }
-  .column-title{
-    height: 10%;
-    padding-bottom: 100px;
-    /* padding: auto; */
-    /* padding: 10px, 10px, 0px, 15px; */
-  }
-  .polaroid{
-    display: none;
-  }
 
-
-}
 .lefthome
 {
   height: 50%;
@@ -395,8 +374,45 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   border-left: 3px dashed rgb(255, 255, 255);
 }
 
-@media screen and (max-width:500px)
+
+  .is-2
+  {
+    font-size:4vh !important;
+  }
+  .is-4
+  {
+    font-size:2.5vh !important;
+  }
+  .is-5
+  {
+    font-size:2vh !important
+  }
+
+
+
+@media screen and (max-width:325px)
 {
+
+  
+  .esp_logo
+  {
+    margin-top:-2px;
+  }
+ .glasscard
+ {
+  padding: 12px;
+ }
+
+
+
+} 
+@media only screen and  (min-width:320px) and (max-width: 500px)
+{
+
+  .column
+{
+padding:1vh !important;
+}
 
 #spinner img {
   width: 60% !important;
@@ -434,10 +450,48 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     max-width: 100%;
     font-size:2.2rem !important;
   }
+  .glasscard
+  {
+    padding: 20px !important;
+  }
+  .polaroid
+  {
+    display: none;
+  }
+#aboutUs
+{
+  display: flex;
+  flex-direction: column;
+ flex: 1 !important;
+}
+
+#aboutUs>.column-right
+{
+  width: 100%;
+  height: 100vh;
+}
+#aboutUs>.column-left
+{
+display: none;
+  
+}
+#aboutUstitle
+{
+  display: block !important;
+}
+.slideshow-container
+{
+  max-width: 100%;
+}
 
   /* write your media query here divyanshiii */
 }
 
+
+#aboutUstitle
+{
+  display: none;
+}
 #baa_guru
 {
   cursor: pointer;
