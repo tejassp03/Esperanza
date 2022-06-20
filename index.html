@@ -36,7 +36,11 @@
     }
 
     .navbar-burger{
-      margin-left: 11.5vh;
+      /* margin-left: 11.5vh; */
+      max-width: 100%;
+      inset-inline-end: calc(100vw - 80px);;
+      float: right;
+      transform: scale(1.25);
     }
 
     #navbar-icon{
@@ -45,6 +49,26 @@
       margin-bottom: -15vh;
     }
 
+    .buttonTop{
+      margin-right: 60vh !important;
+      transform: scale(.7);
+    }
+
+    .polaroid{
+      display:block;
+      width: 40vh;
+      align-items: flex-end;
+      margin-left: 2.5vh;
+    }
+
+    .aboutHeader{
+      margin-left: 10vh !important;
+    }
+
+    .item{
+      margin-left: 0vh !important;
+      margin-bottom: 7vh;
+    }
   }
 </style>
 <body>
@@ -174,25 +198,21 @@
     <div class="column column-left">
 
       <p class="bd-notification is-primary">
-      <h1 style="color: white; font-size: 6vh;">&emsp;&emsp;About Us</h1>
+      <h1 class="aboutHeader" style="color: white; font-size: 6vh; margin-left: 16vh;">About Us</h1>
       </p>
-      <div class="item">
+      <div class="item" style="margin-left: 8vh">
         <div class="polaroid"><img src="assets/images/naac.jpg">
-          <div class="caption subtitle is-4" style="font-weight: bold;">NAAC Accreditation A+</div>
+          <div class="caption subtitle is-5" style="font-weight: bold; font-size: 3.24vh;">NAAC Accreditation A+</div>
         </div>
       </div>
-      <div class="item">
-        <div class="polaroid"><img src="https://www.targetadmission.com/img/colleges/newc/4553-179823.jpg">
-          <div class="caption subtitle is-4" style="font-weight: bold;"><span style="font-weight: bold">DSATM</span>
+      <div class="item"  style="margin-left: 8vh">
+        <div class="polaroid" ><img src="https://www.targetadmission.com/img/colleges/newc/4553-179823.jpg">
+          <div class="caption subtitle is-5" style="font-weight: bold; font-size: 3.24vh;"><span style="font-weight: bold">DSATM</span>
             Campus</div>
         </div>
       </div>
     </div>
-    <div class="column is-8 column-right subtitle is-4" style="line-height:37px">
-
-    
-  
-    </div>
+    <div class="column is-8 column-right subtitle is-4" style="line-height:37px"></div>
 
   </div>
 
@@ -258,10 +278,7 @@
     </div>
 
 </div>
-
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">👆</button>
-
+  <button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top">👆</button>
 </body>
 <footer class="footer">
   <div class="content has-text-centered">
