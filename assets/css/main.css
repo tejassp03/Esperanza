@@ -430,6 +430,7 @@ video {
     display: none;
   }
   #aboutUs {
+    height: 100vh !important;
     display: flex;
     flex-direction: column;
     flex: 1 !important;
