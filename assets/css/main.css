@@ -430,7 +430,7 @@ video {
     display: none;
   }
   #aboutUs {
-    height: 90vh !important;
+    height: 95vh !important;
     display: flex;
     flex-direction: column;
     flex: 1 !important;
